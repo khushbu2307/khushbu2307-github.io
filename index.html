@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Farm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .location {
+            font-family: Gill Sans, sans-serif;
+            margin-left: 10px;
+        }
+        .logo1 {
+            color:red;
+            font-family: Blippo, fantasy;
+            width:150px;
+            font-size: 25px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .avatar {
+            vertical-align: middle;
+            width: 80px;
+            height: 70px;
+            border-radius: 50%;
+        }
+        .category{
+            display: flex;
+        }
+        .category a img{
+            vertical-align: middle;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 70px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+            background-color: black;
+        }
+        .a1{
+            opacity:40%;
+            margin-top: 40px;
+            margin-left: 80px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .item{
+            height: 350px;
+            width: 400px;
+            border-radius: 30px;
+            background-color: cadetblue;
+            padding: 50px;
+            margin: 20px;
+        }
+        .footer{
+            height: 150px;
+            width: 400px;
+            border-radius: 30px;
+            background-color:gray;
+            padding: 50px;
+            margin: 20px;
+        }
+        .fixed-icons {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .icon {
+            /* Add styles for your icons/buttons */
+            color: rgb(235, 79, 79);
+            padding: 40px;
+            margin: 0 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        function ValidateForm(frm) {
+        if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+        if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+        return true; }
+        </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa fa-map-marker" style="font-size:28px;color:red"></i>
+            <div class="location">Mundra</div>
+        </div>
+        <div class="logo1">
+            <div>MAA MARKTING</div>
+        </div>
+        <div class="profile">
+            <a href=""><img src="1.png" alt="Avatar" class="avatar"></a>
+        </div>
+    </header>
+    <img src="banner.avif" height="100%" width="100%">
+    <p class="a1">---------------- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All types perfume &nbsp;&nbsp;&nbsp;&nbsp; ----------------</p>
+    <div class="category">
+        
+        <div fruit><a href=""><img src="img1.jpeg"></a><br>
+            <a href=""><img src="img2.jpeg"></a></div>
+        <div fruit></div>
+        <div fruit><a href=""><img src="img3.jpeg" style="margin-left: 80px;" ></a><br>
+            <a href=""><img src="img4.jpeg" style="height: 80px;width: 110px;"></a></div>
+        <div fruit><a href=""><img src="img5.jpeg"> </a><br>
+            <a href=""><img src="img6.jpeg" style="height: 90px;width: 90px;"> </a></div>
+    </div>
+
+    <p class="a1">---------------- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; All frgrance like you &nbsp;&nbsp;&nbsp;&nbsp; ----------------</p>
+    <div class="item">
+        <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+            
+            <table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+            <tr> <td>
+            <label for="Name">Name*:</label>
+            </td> <td>
+            <input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+            </td> </tr> <tr> <td>
+            <label for="PhoneNumber">Phone number:</label>
+            </td> <td>
+            <input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+            </td> </tr> <tr> <td>
+            <label for="FromEmailAddress">Email address*:</label>
+            </td> <td>
+            <input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+            </td> </tr> <tr> <td>
+            <label for="Comments">Comments*:</label>
+            </td> <td>
+            <textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+            </td> </tr> <tr> <td>
+            </td> <td>
+            <input name="skip_Submit" type="submit" value="Submit" />
+            </td> </tr>
+            </table>
+            </form>
+
+    </div>
+    <div class="footer">
+    <footer>
+        <p>email :<br>
+        <a href="mailto:bupadhyay1212@gmail.com">bupadhyay1212@gmail.com</a></p>
+        <p>PhoneNumber:75754848273</p>
+        <p>terms and condition</p>
+        <p>privacy police</p>
+        <p>copyright@maamarktrong2024</p>
+      </footer>
+    </div>
+    <div class="fixed-icons">
+        <a href="index.html" class="icon"><i class="fa fa-home" style="font-size:36px"></i></a>
+
+        <a href="" class="icon"><i class="fa fa-shopping-cart" style="font-size:36px"></i></a>
+        <a href="payment.html" class="icon"><i class="fa fa-history" style="font-size:36px"></i></a>
+        <a href="login.html" class="icon"><i class="fa fa-user" style="font-size:36px"></i></a>
+    </div>
+</body>
+</html>
